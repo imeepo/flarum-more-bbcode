@@ -39,7 +39,7 @@ app.initializers.add("imeepo/more-bbcode", () => {
       "imeepo-cloud",
       <TextEditorButton
         onclick={() => {
-          this.attrs.composer.editor.insertAtCursor('[cloud type=other title="标题" url=链接]密码[/cloud]');
+          this.attrs.composer.editor.insertAtCursor('[cloud type=other title=标题 url=链接]密码[/cloud]');
           const range = this.attrs.composer.editor.getSelectionRange();
           this.attrs.composer.editor.moveCursorTo(range[1] - 8);
         }}

@@ -1,0 +1,12 @@
+imeepo-more-bbcode:
+  admin:
+    permissions:
+      bypass_reply_label: 忽略回复可见
+  forum:
+    hidden_content_reply: 回复可见的内容
+    hidden_content_login: 登录可见的内容
+    reply_to_see: "此内容需要 {reply} 并刷新后可见"
+    login_to_see: "此内容需要 {login} 并刷新后可见"
+    button_tooltip_reply: "插入回复可见"
+    button_tooltip_login: "插入登录可见"
+    button_tooltip_cloud: "插入下载地址"

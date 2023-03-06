@@ -1,0 +1,5 @@
+imeepo-more-bbcode:
+  forum:
+    hidden_content: HIDDEN CONTENT
+    reply_to_see: "You need to {reply} and refresh to see the content"
+    button_tooltip_reply: "Add hidden content"

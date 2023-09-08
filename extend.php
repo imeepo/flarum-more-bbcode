@@ -29,11 +29,11 @@ return [
             // https://s9etextformatter.readthedocs.io/Plugins/BBCodes/Add_custom_BBCodes/
             $config->BBCodes->addCustom(
                 '[REPLY]{TEXT}[/REPLY]',
-                '<reply2see>{TEXT}</reply2see>'
+                '<div><reply2see></reply2see>{TEXT}<reply2see></reply2see></div>'
             );
             $config->BBCodes->addCustom(
                 '[LOGIN]{TEXT}[/LOGIN]',
-                '<login2see>{TEXT}</login2see>'
+                '<div><login2see></login2see>{TEXT}<login2see></login2see></div>'
             );
             $config->BBCodes->addCustom(
                 '[cloud type={TEXT1} title={TEXT2} url={URL}]{TEXT3}[/cloud]',

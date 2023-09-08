@@ -21,12 +21,12 @@ class ReplaceCode extends FormatContent
             }
 
             // 登录可见
-            if (str_contains($attributes["contentHtml"], '<login2see><login2see/>')) {
+            if (str_contains($attributes["contentHtml"], '<login2see></login2see>')) {
                 $attributes = $this->login($serializer, $post, $attributes);
             }
 
             // 回复可见
-            if (str_contains($attributes["contentHtml"], '<reply2see><reply2see/>')) {
+            if (str_contains($attributes["contentHtml"], '<reply2see></reply2see>')) {
                 $attributes = $this->reply($serializer, $post, $attributes);
             }
         }

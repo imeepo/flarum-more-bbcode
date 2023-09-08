@@ -14,15 +14,39 @@ composer require imeepo/flarum-more-bbcode:"*"
 
 ## 如何使用
 
+### 登录/回复可见
 当创建/编辑一篇文章时，你可以简单地使用[reply]BBCode使它对其他用户隐藏，只有回复的用户才可以看到隐藏内容。
 
 ```bbcode
+[login]这里的内容登录可见[/login]
 [reply]这里的内容回复可见[/reply]
 ```
-
+### 网盘样式
+很优雅的分享网盘链接，或Github/Gitee仓库链接
+```bbcode
+[cloud type=lz title=标题 url=链接]密码[/cloud]
+[cloud type=123 title=标题 url=链接]密码[/cloud]
+[cloud type=ali title=标题 url=链接]密码[/cloud]
+[cloud type=bd title=标题 url=链接]密码[/cloud]
+[cloud type=ty title=标题 url=链接]密码[/cloud]
+[cloud type=360 title=标题 url=链接]密码[/cloud]
+[cloud type=ct title=标题 url=链接]密码[/cloud]
+[cloud type=tx title=标题 url=链接]密码[/cloud]
+[cloud type=kk title=标题 url=链接]密码[/cloud]
+[cloud type=other title=标题 url=链接]密码[/cloud]
+[cloud type=github title=标题 url=链接]v1.0.0[/cloud]
+[cloud type=gitee title=标题 url=链接]v1.0.0[/cloud]
+```
 ## 已知问题
 
-在帖子列表展示摘要时，如果出现隐藏内容的话，不会被隐藏，
+* 用户在回复带有隐藏内容的帖子后,再次点击回复按钮，隐藏内容样式会丢失
+* 帖子列表的摘要会显示隐藏内容（临时解决：别把隐藏内容放到帖子太靠前的地方）
+* ~~帖子作者在编辑的时候,网盘下载地址会点击不了~~（已修复）
+
+## TODO
+* 尝试修复已知问题
+* 权限控制
+  
 
 ## 更新
 
@@ -31,6 +55,11 @@ composer update imeepo/flarum-more-bbcode:"*"
 php flarum migrate
 php flarum cache:clear
 ```
+
+## 更新内容
+### 1.0.2
+* 修复帖子作者在编辑的时候，网盘下载地址会点击不了（[zxy19修复](https://github.com/imeepo/flarum-more-bbcode/commit/c1e4cfcde7c1de0314be5656306fe9c7c81b9e2b)）
+* 新增夸克网盘
 
 ## 链接
 

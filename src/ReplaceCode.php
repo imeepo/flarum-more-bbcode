@@ -21,12 +21,12 @@ class ReplaceCode extends FormatContent
             }
 
             // 登录可见
-            if (str_contains($attributes["contentHtml"], '<login2see>')) {
+            if (str_contains($attributes["contentHtml"], '<login2see />')) {
                 $attributes = $this->login($serializer, $post, $attributes);
             }
 
             // 回复可见
-            if (str_contains($attributes["contentHtml"], '<reply2see>')) {
+            if (str_contains($attributes["contentHtml"], '<reply2see />')) {
                 $attributes = $this->reply($serializer, $post, $attributes);
             }
         }
@@ -58,7 +58,7 @@ class ReplaceCode extends FormatContent
         }
 
         if ($replied) {
-            $newHTML = preg_replace('/<reply2see>(.*?)<\/reply2see>/is',
+            $newHTML = preg_replace('/<div><reply2see \/>(.*?)<reply2see \/><\/div>/is',
                 '<div class="reply2see"><div class="reply2see_title">' .
                 $this->translator->trans('imeepo-more-bbcode.forum.hidden_content_reply')
                 . '</div>$1</div>',
@@ -66,7 +66,7 @@ class ReplaceCode extends FormatContent
             );
         } else {
             $newHTML = preg_replace(
-                '/<reply2see>(.*?)<\/reply2see>/is',
+                '/<div><reply2see \/>(.*?)<reply2see \/><\/div>/is',
                 '<div class="reply2see"><div class="reply2see_alert">' .
                 $this->translator->trans('imeepo-more-bbcode.forum.reply_to_see',
                     array(
@@ -106,7 +106,7 @@ class ReplaceCode extends FormatContent
         }
 
         if ($logined) {
-            $newHTML = preg_replace('/<login2see>(.*?)<\/login2see>/is',
+            $newHTML = preg_replace('/<div><login2see \/>(.*?)<login2see \/><\/div>/is',
                 '<div class="login2see"><div class="login2see_title">' .
                 $this->translator->trans('imeepo-more-bbcode.forum.hidden_content_login')
                 . '</div>$1</div>',
@@ -114,7 +114,7 @@ class ReplaceCode extends FormatContent
             );
         } else {
             $newHTML = preg_replace(
-                '/<login2see>(.*?)<\/login2see>/is',
+                '/<div><login2see \/>(.*?)<login2see \/><\/div>/is',
                 '<div class="login2see"><div class="login2see_alert">' .
                 $this->translator->trans('imeepo-more-bbcode.forum.login_to_see',
                     array(

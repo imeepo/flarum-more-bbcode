@@ -22,7 +22,7 @@ composer require imeepo/flarum-more-bbcode:"*"
 [reply]这里的内容回复可见[/reply]
 ```
 ### 网盘样式
-很优雅的分享网盘链接，或Github/Gitee仓库链接
+很优雅的分享网盘链接，或Github/Gitee仓库链接(如果没有密码可以不填写)
 ```bbcode
 [cloud type=lz title=标题 url=链接]密码[/cloud]
 [cloud type=123 title=标题 url=链接]密码[/cloud]
@@ -57,6 +57,10 @@ php flarum cache:clear
 ```
 
 ## 更新内容
+### 1.0.3
+* 修复了en.yml（[Litalino修复](https://github.com/imeepo/flarum-more-bbcode/pull/2/commits/5ac34546d7a6c372af65471c22c2304943c3f0f0)）
+* 为other下载添加了语言
+
 ### 1.0.2
 * 修复帖子作者在编辑的时候，网盘下载地址会点击不了（[zxy19修复](https://github.com/imeepo/flarum-more-bbcode/commit/c1e4cfcde7c1de0314be5656306fe9c7c81b9e2b)）
 * 新增夸克网盘

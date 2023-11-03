@@ -10,3 +10,6 @@ imeepo-more-bbcode:
     button_tooltip_reply: "插入回复可见"
     button_tooltip_login: "插入登录可见"
     button_tooltip_cloud: "插入下载地址"
+    cloud_title: "标题"
+    cloud_url: "链接"
+    cloud_password: "密码"

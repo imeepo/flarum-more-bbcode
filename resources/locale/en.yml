@@ -26,7 +26,7 @@ imeepo-more-bbcode:
     button_tooltip_details: "Insert details"
     button_tooltip_table: "Insert table"
     button_tooltip_audio: "Insert audio"
-    button_tooltip_video: "Insert video"
+    button_tooltip_clip: "Insert clip"
     button_tooltip_word: "Insert word"
     button_tooltip_size: "Text Size"
     button_tooltip_color: "Text Color"

@@ -106,7 +106,7 @@ return [
                 </audio></p>'
             );
             $config->BBCodes->addCustom(
-               '[video mp4="{URL?}"]',
+               '[clip mp4="{URL?}"]',
                '<p><video controls src="{URL}"></video></p>'
             );
             

@@ -258,13 +258,13 @@ export default class TextEditorButton extends Component {
      * Make selected text Audio.
      */
     items.add(
-      "video",
+      "clip",
       Button.component(
         {
           icon: "fas fa-file-video",
-          onclick: () => this.video(),
+          onclick: () => this.clip(),
         },
-        app.translator.trans("imeepo-more-bbcode.forum.button_tooltip_video")
+        app.translator.trans("imeepo-more-bbcode.forum.button_tooltip_clip")
       ),
       0
     );
@@ -434,8 +434,8 @@ export default class TextEditorButton extends Component {
     this.attrs.textEditor.insertAtCursor('[audio mp3="URL"]');
   }
 
-  video() {
-    this.attrs.textEditor.insertAtCursor('[video mp4="URL"]');
+  clip() {
+    this.attrs.textEditor.insertAtCursor('[clip mp4="URL"]');
   }
 
   insertTable(e) {

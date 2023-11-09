@@ -1,0 +1,35 @@
+imeepo-more-bbcode:
+  admin:
+    permissions:
+      bypass_reply_label: Bỏ qua các câu trả lời được hiển thị
+  forum:
+    hidden_content: NỘI DUNG ẨN
+    hidden_content_reply: Trả lời nội dung hiển thị
+    hidden_content_login: Đăng nhập nội dung hiển thị
+    hidden_content_like: Thích nội dung hiển thị
+    reply_to_see: "Nội dung này yêu cầu {reply} và hiển thị sau khi làm mới"
+    login_to_see: "Nội dung này yêu cầu {login} và hiển thị sau khi làm mới"
+    like_to_see: "Nội dung này yêu cầu {like} và hiển thị sau khi làm mới"
+    button_tooltip_reply: "Trả lời hiển thị"
+    button_tooltip_login: "Đăng nhập hiển thị"
+    button_tooltip_like: "Thích hiển thị"
+    button_tooltip_cloud: "Địa chỉ tải xuống"
+    button_tooltip_left: "Văn bản bên trái"
+    button_tooltip_center: "Văn bản trung tâm"
+    button_tooltip_right: "Văn bản bên phải"
+    button_tooltip_justify: "Căn đều văn bản"
+    button_tooltip_dropcap: "Chữ hoa đầu dòng"
+    button_tooltip_img_left: "Ảnh bên trái"
+    button_tooltip_img_right: "Ảnh bên phải"
+    button_tooltip_p_left: "Đệm bên trái"
+    button_tooltip_p_right: "Đệm bên phải"
+    button_tooltip_details: "Chèn chi tiết"
+    button_tooltip_table: "Chèn bảng"
+    button_tooltip_audio: "Chèn âm thanh"
+    button_tooltip_video: "Chèn video"
+    button_tooltip_word: "Chèn word"
+    button_tooltip_size: "Cỡ chữ"
+    button_tooltip_color: "Văn bản màu"
+    cloud_title: "Tiêu đề"
+    cloud_url: "Đường dẫn"
+    cloud_password: "Mật khẩu (Không có để trống)"

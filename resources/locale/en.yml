@@ -3,13 +3,33 @@ imeepo-more-bbcode:
     permissions:
       bypass_reply_label: Ignore the displayed answers
   forum:
+    hidden_content: HIDDEN CONTENT
     hidden_content_reply: Reply to displayed content
     hidden_content_login: Log in displayed content
+    hidden_content_like: Liked to displayed content
     reply_to_see: "This content requires {reply} and displays after refresh"
     login_to_see: "This content requires {login} and is visible after refresh"
-    button_tooltip_reply: "Insert display reply"
-    button_tooltip_login: "Insert visible login information"
-    button_tooltip_cloud: "Insert download address"
+    like_to_see: "This content requires {like} and is visible after refresh"
+    button_tooltip_reply: "Reply in to see"
+    button_tooltip_login: "Log in to see"
+    button_tooltip_like: "Likes in to see"
+    button_tooltip_cloud: "Download address"
+    button_tooltip_left: "Text on the left"
+    button_tooltip_center: "Text on the center"
+    button_tooltip_right: "Text on the right"
+    button_tooltip_justify: "Justified text"
+    button_tooltip_dropcap: "Text Dropcap"
+    button_tooltip_img_left: "Image on the left"
+    button_tooltip_img_right: "Image on the right"
+    button_tooltip_p_left: "Left padding"
+    button_tooltip_p_right: "Right padding"
+    button_tooltip_details: "Insert details"
+    button_tooltip_table: "Insert table"
+    button_tooltip_audio: "Insert audio"
+    button_tooltip_video: "Insert video"
+    button_tooltip_word: "Insert word"
+    button_tooltip_size: "Text Size"
+    button_tooltip_color: "Text Color"
     cloud_title: "Title"
     cloud_url: "Url"
-    cloud_password: "Password"
+    cloud_password: "Password (No blank)"

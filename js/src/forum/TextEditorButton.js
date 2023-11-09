@@ -482,23 +482,11 @@ app.initializers.add("imeepo/more-bbcode", () => {
             false
           )
         );
-      $(".like2see_like")
-        .off("click")
-        .on("click", () =>
-          DiscussionControls.likesAction.call(
-            app.current.get("discussion"),
-            true,
-            false
-          )
-        );
     } else {
       $(".reply2see_reply")
         .off("click")
         .on("click", () => app.modal.show(LogInModal));
       $(".login2see_login")
-        .off("click")
-        .on("click", () => app.modal.show(LogInModal));
-      $(".like2see_like")
         .off("click")
         .on("click", () => app.modal.show(LogInModal));
     }

@@ -26,7 +26,7 @@ imeepo-more-bbcode:
     button_tooltip_details: "Chèn chi tiết"
     button_tooltip_table: "Chèn bảng"
     button_tooltip_audio: "Chèn âm thanh"
-    button_tooltip_video: "Chèn video"
+    button_tooltip_clip: "Chèn clip"
     button_tooltip_word: "Chèn word"
     button_tooltip_size: "Cỡ chữ"
     button_tooltip_color: "Văn bản màu"
